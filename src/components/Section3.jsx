@@ -1,7 +1,10 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import video from "../assets/Y2Mate.is - India Map - Video Clip-O1nKvNC-A7g-1080p-1660422745333.mp4";
 const Section3 = () => {
+  const navigate = useNavigate();
+
   return (
     <Container className="py-5">
       <Row className="g-3">
@@ -33,7 +36,9 @@ const Section3 = () => {
             className="w-100"
           />
           <br />
-          <Button className="hover__button">Sign Up</Button>
+          <Button className="hover__button" onClick={() => navigate("/otp")}>
+            Sign Up
+          </Button>
         </Col>
       </Row>
     </Container>

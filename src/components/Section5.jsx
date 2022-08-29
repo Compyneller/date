@@ -25,7 +25,7 @@ const Section5 = () => {
             screen. Advanced features for expert traders, including
             customisation tools: colors, type of graph, etc.
           </p>
-          <Button className="hover__button">View the Interface</Button>
+          {/* <Button className="hover__button">View the Interface</Button> */}
         </Col>
       </Row>
     </Container>

@@ -1,7 +1,9 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const Section2 = () => {
+  const navigate = useNavigate();
   return (
     <Container className="py-5">
       <Row className="g-3">
@@ -22,7 +24,9 @@ const Section2 = () => {
             Our maker fees are the most rewarding of the marke
           </p>
           <br />
-          <Button className="hover__button">Sign Up</Button>
+          <Button className="hover__button" onClick={() => navigate("/otp")}>
+            Sign Up
+          </Button>
         </Col>
         <Col sm={12} lg={6}>
           <img

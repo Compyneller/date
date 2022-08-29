@@ -23,8 +23,22 @@ const Section4 = () => {
           </p>
           <br />
           <div className="w-100 d-flex">
-            <Button className="hover__button me-3">Android</Button>
-            <Button className="hover__button">iOS</Button>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.inrd.app"
+              target="_blank"
+              className="hover__button py-2 px-3 me-3"
+              style={{ textDecoration: "none" }}
+            >
+              Android
+            </a>
+            <a
+              href="https://apps.apple.com/in/app/date-trading-exchange/id1639180835"
+              target="_blank"
+              className="hover__button py-2 px-3 "
+              style={{ textDecoration: "none" }}
+            >
+              iOS
+            </a>
           </div>
         </Col>
         <Col sm={12} lg={6}>

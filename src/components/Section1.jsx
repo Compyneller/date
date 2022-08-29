@@ -1,7 +1,9 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const Section1 = () => {
+  const navigate = useNavigate();
   return (
     <Container className="py-5">
       <Row className="g-3">
@@ -33,7 +35,12 @@ const Section1 = () => {
             of the most competitive you can find online.{" "}
           </p>
           <br />
-          <Button className=" w-25 hover__button">Sign Up</Button>
+          <Button
+            className=" w-25 hover__button"
+            onClick={() => navigate("/otp")}
+          >
+            Sign Up
+          </Button>
         </Col>
       </Row>
     </Container>
