@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero__heading{
+  font-size: 3.28125vw;
+}
+.hero__text{
+  font-size: 1.25vw;
+}
+.hero__button{
+  font-size: 1.5104166666666667vw !important;
+  width: 50%;
+}
+.section__heading{
+  font-size: 2.5vw;
+}
+.hover__button{
+  border: 1px solid #3F43AD !important;
+  background: transparent !important;
+  color: #3F43AD !important;
+  border-radius: 0 !important;
+  transition: 250ms ease-out !important;
+  width: fit-content;
+}
+.hover__button:hover{
+  background-color: #3F43AD !important;
+  transition: 250ms ease-in !important;
+  color: #ffff !important;
+}
+.hero__app__buttons{
+  width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bottom__button{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer__container{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #F3F3F3;
+  min-height: 15vh;
+}
+.footer__container a{
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+.login__container{
+  width: 50% !important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width : 900px) {
+  .hero__heading{
+    font-size: 11.58125vw;
   }
-  to {
-    transform: rotate(360deg);
+  .hero__text{
+    font-size: 5.25vw;
+  }
+  .hero__button{
+    font-size: 4.5104166666666667vw !important;
+    width: 100%;
+  }
+  .hero__app__buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .hero__image{
+    display: none;
+  }
+  .section__heading{
+    font-size: 8.5vw;
+  }
+  .bottom__button{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .login__container{
+    width: 100% !important;
   }
 }
