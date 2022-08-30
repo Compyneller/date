@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/oie_dkLNRDsfmxAM.png";
 const NavBarComp = () => {
   const navigate = useNavigate();
   return (
@@ -18,7 +19,9 @@ const NavBarComp = () => {
           className="mb-3 shadow-sm"
         >
           <Container>
-            <Navbar.Brand href="#">Date</Navbar.Brand>
+            <Navbar.Brand href="#">
+              <img src={logo} alt="" style={{ height: "6vh" }} />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -27,7 +30,7 @@ const NavBarComp = () => {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Date
+                  <img src={logo} alt="" style={{ height: "6vh" }} />
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>

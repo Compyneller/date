@@ -26,14 +26,18 @@ const Footer = () => {
             lg={3}
             className="d-flex aling-items-center justify-content-center"
           >
-            <Link to="/">Terms and Conditions</Link>
+            <Link to="/tc" onClick={() => window.scroll(0, 0)}>
+              Terms and Conditions
+            </Link>
           </Col>
           <Col
             sm={6}
             lg={3}
             className="d-flex aling-items-center justify-content-center"
           >
-            <Link to="/">Privacy Policy</Link>
+            <Link to="/privacy-policy" onClick={() => window.scroll(0, 0)}>
+              Privacy Policy
+            </Link>
           </Col>
         </Row>
       </Container>

@@ -10,6 +10,8 @@ import Otp from "./pages/Otp";
 import "toastify-js/src/toastify.css";
 import ForgetPassword from "./pages/ForgetPassword";
 import Message from "./pages/Message";
+import TC from "./pages/TC";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 function App() {
   return (
     <div className="App">
@@ -22,6 +24,8 @@ function App() {
           <Route path="/otp" element={<Otp />} />
           <Route path="/forgot-password" element={<ForgetPassword />} />
           <Route path="/message" element={<Message />} />
+          <Route path="/tc" element={<TC />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
       </BrowserRouter>
