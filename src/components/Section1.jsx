@@ -22,17 +22,17 @@ const Section1 = () => {
           <h1 className="section__heading">
             Join the Pioneering Bitcoin Exchange
           </h1>
-          <h3>Defending Bitcoin since 2011</h3>
+          <h3>Defending Bitcoin since 2022</h3>
           <br />
           <p>
-            Paymium has been offering a BTC/INR marketplace since the early days
-            of Bitcoin. We build services that aim to make the Internet of Value
+            Date has been offering a BTC/INR marketplace since the early days of
+            Bitcoin. We build services that aim to make the Internet of Value
             more accessible to everyone, at a fair price.{" "}
           </p>
           <p>We practice cold storage of 99% of deposited Bitcoins.</p>
           <p>
-            We offer deposit by bank transfer in INR. Trading on Paymium is one
-            of the most competitive you can find online.{" "}
+            We offer deposit by bank transfer in INR. Trading on Date is one of
+            the most competitive you can find online.{" "}
           </p>
           <br />
           <Button

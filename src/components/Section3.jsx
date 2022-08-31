@@ -25,9 +25,9 @@ const Section3 = () => {
           <h3>Service complying with Indian regulation</h3>
           <br />
           <p>
-            Pioneering in cryptocurrency trading since 2011, Paymium is
-            registered as a Digital Asset Service Provider (DASP) with the
-            Autorité des Marchés Financiers (AMF) under the registration number{" "}
+            Pioneering in cryptocurrency trading since 2022, Dateis registered
+            as a Digital Asset Service Provider (DASP) with the Autorité des
+            Marchés Financiers (AMF) under the registration number{" "}
           </p>
           <br />
           <img

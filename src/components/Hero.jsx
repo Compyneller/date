@@ -57,7 +57,7 @@ const Hero = () => {
                 alt=""
               />
             </span>{" "}
-            since 2011
+            since 2022
           </h5>
         </Col>
         <Col sm={12} lg={6} className="hero__image">

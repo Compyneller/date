@@ -1,6 +1,8 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
-
+import { Button, Carousel, Col, Container, Row } from "react-bootstrap";
+import image1 from "../assets/unnamed (3).webp";
+import image2 from "../assets/unnamed (4).webp";
+import image3 from "../assets/unnamed (5).webp";
 const Section4 = () => {
   return (
     <Container className="py-5">
@@ -11,7 +13,7 @@ const Section4 = () => {
           className="d-flex flex-column justify-content-center"
         >
           <h1 className="section__heading">Try the mobile app!</h1>
-          <h3>All Paymium in the palm of the hand</h3>
+          <h3>All Date in the palm of the hand</h3>
           <br />
           <p>
             Buy and sell bitcoins wherever you are, follow the market and create
@@ -42,11 +44,17 @@ const Section4 = () => {
           </div>
         </Col>
         <Col sm={12} lg={6}>
-          <img
-            src="https://www.paymium.com/20220804082200/images/mobile-app-en.png"
-            alt=""
-            className="w-100"
-          />
+          <Row className="g-3">
+            <div className="col-4">
+              <img src={image1} alt="" className="w-100" />
+            </div>
+            <div className="col-4">
+              <img src={image2} alt="" className="w-100" />
+            </div>
+            <div className="col-4">
+              <img src={image3} alt="" className="w-100" />
+            </div>
+          </Row>
         </Col>
       </Row>
     </Container>
