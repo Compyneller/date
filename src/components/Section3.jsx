@@ -2,6 +2,8 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import video from "../assets/Y2Mate.is - India Map - Video Clip-O1nKvNC-A7g-1080p-1660422745333.mp4";
+import GetItOnApple from "./GetItOnApple";
+import GetItOnPlay from "./GetItOnPlay";
 const Section3 = () => {
   const navigate = useNavigate();
 
@@ -36,9 +38,14 @@ const Section3 = () => {
             className="w-100"
           />
           <br />
-          <Button className="hover__button" onClick={() => navigate("/otp")}>
-            Sign Up
-          </Button>
+          <Row className="g-3 hero__app__buttons">
+            <div className="col-6">
+              <GetItOnPlay />
+            </div>
+            <div className="col-6">
+              <GetItOnApple />
+            </div>
+          </Row>
         </Col>
       </Row>
     </Container>

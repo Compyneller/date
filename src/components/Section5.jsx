@@ -1,16 +1,12 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-
+import image from "../assets/advanced-trading@2x.png";
 const Section5 = () => {
   return (
     <Container className="py-5">
       <Row className="g-3">
         <Col sm={12} lg={6}>
-          <img
-            src="https://www.paymium.com/20220804082200/images/advanced-trading@2x.png"
-            alt=""
-            className="w-100"
-          />
+          <img src={image} alt="" className="w-100" />
         </Col>
         <Col
           sm={12}

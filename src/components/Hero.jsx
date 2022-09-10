@@ -1,5 +1,7 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import GetItOnApple from "./GetItOnApple";
+import GetItOnPlay from "./GetItOnPlay";
 
 const Hero = () => {
   return (
@@ -27,24 +29,10 @@ const Hero = () => {
           <br />
           <Row className="g-3 hero__app__buttons">
             <div className="col-6">
-              <a
-                href="https://play.google.com/store/apps/details?id=com.inrd.app"
-                target="_blank"
-                className="hover__button py-2 px-3 w-100"
-                style={{ textDecoration: "none" }}
-              >
-                Google Play
-              </a>
+              <GetItOnPlay />
             </div>
             <div className="col-6">
-              <a
-                href="https://apps.apple.com/in/app/date-trading-exchange/id1639180835"
-                target="_blank"
-                className="hover__button py-2 px-3 w-100"
-                style={{ textDecoration: "none" }}
-              >
-                App Store
-              </a>
+              <GetItOnApple />
             </div>
           </Row>
           <br />

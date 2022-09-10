@@ -1,18 +1,16 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-
+import GetItOnApple from "./GetItOnApple";
+import GetItOnPlay from "./GetItOnPlay";
+import image from "../assets/home-fees-section-nocard.png";
 const Section1 = () => {
   const navigate = useNavigate();
   return (
     <Container className="py-5">
       <Row className="g-3">
         <Col sm={12} lg={6}>
-          <img
-            src="https://www.paymium.com/20220804082200/images/home-fees-section-nocard.png"
-            alt=""
-            className="w-100"
-          />
+          <img src={image} alt="" className="w-100" />
         </Col>
         <Col
           sm={12}
@@ -35,12 +33,14 @@ const Section1 = () => {
             the most competitive you can find online.{" "}
           </p>
           <br />
-          <Button
-            className=" w-25 hover__button"
-            onClick={() => navigate("/otp")}
-          >
-            Sign Up
-          </Button>
+          <Row className="g-3 hero__app__buttons">
+            <div className="col-6">
+              <GetItOnPlay />
+            </div>
+            <div className="col-6">
+              <GetItOnApple />
+            </div>
+          </Row>
         </Col>
       </Row>
     </Container>
