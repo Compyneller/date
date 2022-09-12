@@ -38,14 +38,10 @@ const Section3 = () => {
             className="w-100"
           />
           <br />
-          <Row className="g-3 hero__app__buttons">
-            <div className="col-6">
-              <GetItOnPlay />
-            </div>
-            <div className="col-6">
-              <GetItOnApple />
-            </div>
-          </Row>
+          <div className="d-flex" style={{ gap: "1rem" }}>
+            <GetItOnPlay />
+            <GetItOnApple />
+          </div>
         </Col>
       </Row>
     </Container>

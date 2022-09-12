@@ -12,6 +12,9 @@ import ForgetPassword from "./pages/ForgetPassword";
 import Message from "./pages/Message";
 import TC from "./pages/TC";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import WhatIsBitCoin from "./pages/WhatIsBitCoin";
+import Fees from "./pages/Fees";
+import ContactUs from "./pages/ContactUs";
 function App() {
   return (
     <div className="App">
@@ -26,6 +29,9 @@ function App() {
           <Route path="/message" element={<Message />} />
           <Route path="/tc" element={<TC />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/what-is-bitcoin" element={<WhatIsBitCoin />} />
+          <Route path="/fees" element={<Fees />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
       </BrowserRouter>

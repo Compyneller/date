@@ -6,7 +6,7 @@ const GetItOnApple = () => {
       href="https://apps.apple.com/in/app/date-trading-exchange/id1639180835"
       target="_blank"
     >
-      <img src={apple} width={130} height={50} alt="" />
+      <img src={apple} width={120} height={50} alt="" />
     </a>
   );
 };

@@ -1,8 +1,7 @@
 import React from "react";
 import { Button, Carousel, Col, Container, Row } from "react-bootstrap";
-import image1 from "../assets/unnamed (3).webp";
-import image2 from "../assets/unnamed (4).webp";
-import image3 from "../assets/unnamed (5).webp";
+import image1 from "../assets/3D App screen.png";
+
 import GetItOnApple from "./GetItOnApple";
 import GetItOnPlay from "./GetItOnPlay";
 const Section4 = () => {
@@ -26,27 +25,13 @@ const Section4 = () => {
             Bitcoin payment terminal is included in the application
           </p>
           <br />
-          <Row className="g-3 hero__app__buttons">
-            <div className="col-6">
-              <GetItOnPlay />
-            </div>
-            <div className="col-6">
-              <GetItOnApple />
-            </div>
-          </Row>
+          <div className="d-flex" style={{ gap: "1rem" }}>
+            <GetItOnPlay />
+            <GetItOnApple />
+          </div>
         </Col>
         <Col sm={12} lg={6}>
-          <Row className="g-3">
-            <div className="col-4">
-              <img src={image1} alt="" className="w-100" />
-            </div>
-            <div className="col-4">
-              <img src={image2} alt="" className="w-100" />
-            </div>
-            <div className="col-4">
-              <img src={image3} alt="" className="w-100" />
-            </div>
-          </Row>
+          <img className="w-75" src={image1} alt="" />
         </Col>
       </Row>
     </Container>

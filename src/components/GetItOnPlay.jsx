@@ -6,7 +6,7 @@ const GetItOnPlay = () => {
       href="https://play.google.com/store/apps/details?id=com.inrd.app"
       target="_blank"
     >
-      <img src={google} width={130} height={50} alt="" />
+      <img src={google} width={120} height={50} alt="" />
     </a>
   );
 };

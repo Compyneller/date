@@ -6,6 +6,8 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/oie_dkLNRDsfmxAM.png";
+import GetItOnApple from "./GetItOnApple";
+import GetItOnPlay from "./GetItOnPlay";
 const NavBarComp = () => {
   const navigate = useNavigate();
   return (
@@ -19,7 +21,7 @@ const NavBarComp = () => {
           className="mb-3 shadow-sm"
         >
           <Container>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="/">
               <img src={logo} alt="" style={{ height: "6vh" }} />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -37,6 +39,7 @@ const NavBarComp = () => {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <NavDropdown
                     title="Services"
+                    className="me-3"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                     style={{ borderRadius: "0" }}
                   >
@@ -56,33 +59,27 @@ const NavBarComp = () => {
                       OTC Desk
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <NavDropdown
-                    title="Pro-Traders"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item href="#action3">
-                      Advanced Trading
-                    </NavDropdown.Item>
-                  </NavDropdown>
+
                   <NavDropdown
                     title="Help"
+                    className="me-3"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action4">FAQ</NavDropdown.Item>
+                    <NavDropdown.Item href="/fees">Fees</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">Blog</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">Fees</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item href="/what-is-bitcoin">
                       What is Bitcoin?
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item href="/contact-us">
                       Contact Us
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Button
+                  <div className="d-flex" style={{ gap: "1rem" }}>
+                    <GetItOnPlay />
+                    <GetItOnApple />
+                  </div>
+                  {/* <Button
                     variant="outline-primary"
                     style={{ borderRadius: "0" }}
                     onClick={() => navigate("/login")}
@@ -96,7 +93,7 @@ const NavBarComp = () => {
                     onClick={() => navigate("/otp")}
                   >
                     Sign Up
-                  </Button>
+                  </Button> */}
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

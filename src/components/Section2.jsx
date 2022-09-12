@@ -30,14 +30,10 @@ const Section2 = () => {
             Our maker fees are the most rewarding of the marke
           </p>
           <br />
-          <Row className="g-3 hero__app__buttons">
-            <div className="col-6">
-              <GetItOnPlay />
-            </div>
-            <div className="col-6">
-              <GetItOnApple />
-            </div>
-          </Row>
+          <div className="d-flex" style={{ gap: "1rem" }}>
+            <GetItOnPlay />
+            <GetItOnApple />
+          </div>
         </Col>
         <Col sm={12} lg={6}>
           <img className="w-100" src={image} alt="" />
