@@ -32,16 +32,23 @@ const ContactUs = () => {
               </a>
             </Col>
             <Col sm={6} lg={4}>
-              <Card className="shadow">
-                <Card.Body className="d-flex flex-column justify-content-center align-items-center">
-                  <img
-                    height={90}
-                    src="https://img.icons8.com/fluency/344/twitter.png"
-                    alt=""
-                  />
-                  <h5 className="my-3">Twitter</h5>
-                </Card.Body>
-              </Card>
+              <a
+                href="https://twitter.com/date_platform"
+                className="text-dark"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <Card className="shadow">
+                  <Card.Body className="d-flex flex-column justify-content-center align-items-center">
+                    <img
+                      height={90}
+                      src="https://img.icons8.com/fluency/344/twitter.png"
+                      alt=""
+                    />
+                    <h5 className="my-3">Twitter</h5>
+                  </Card.Body>
+                </Card>
+              </a>
             </Col>
             <Col sm={6} lg={4}>
               <Card className="shadow">

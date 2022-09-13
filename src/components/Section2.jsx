@@ -8,6 +8,7 @@ import wazir from "../assets/download.png";
 import kuber from "../assets/download.svg";
 import zebpay from "../assets/ZebPay-1.svg";
 import dcx from "../assets/Logo_CoinDCX.svg";
+import date from "../assets/oie_dkLNRDsfmxAM.png";
 const Section2 = () => {
   const navigate = useNavigate();
   return (
@@ -36,9 +37,17 @@ const Section2 = () => {
           </div>
         </Col>
         <Col sm={12} lg={6}>
-          <img className="w-100" src={image} alt="" />
           <Card>
             <Card.Body>
+              <Row className="g-3">
+                <div className="col-3">
+                  <img src={date} alt="" className="w-100" />
+                </div>
+                <div className="col-9 d-flex justify-content-end">
+                  <h3>0%</h3>
+                </div>
+              </Row>
+              <br />
               <Row className="g-3">
                 <div className="col-3">
                   <img

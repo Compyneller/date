@@ -1,5 +1,6 @@
 import React from "react";
 import BottomHero from "../components/BottomHero";
+import CarouselComp from "../components/CarouselComp/CarouselComp";
 import Hero from "../components/Hero";
 // import NavBarComp from "../components/NavBarComp";
 import Section1 from "../components/Section1";
@@ -12,7 +13,8 @@ const Home = () => {
   return (
     <>
       {/* <NavBarComp /> */}
-      <Hero />
+      {/* <Hero /> */}
+      <CarouselComp />
       <BottomHero />
       <Section1 />
       <Section2 />

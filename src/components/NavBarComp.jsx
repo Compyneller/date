@@ -47,15 +47,10 @@ const NavBarComp = () => {
                       Buy/Sell
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
-                      Referral Program
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Merchant
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item
+                      href="https://forms.gle/6UHw7hESGLA9v5AZ9"
+                      target="_blank"
+                    >
                       OTC Desk
                     </NavDropdown.Item>
                   </NavDropdown>
